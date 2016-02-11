@@ -1,0 +1,55 @@
+<div class='container'>
+     <div class='page-header'>
+                <h1> Profile </h1>
+      </div>
+      <form class='form-horizontal' name='ProfileForm'>
+    	<div class='panel panel-primary'>
+    	   <div class="panel-heading">
+    	   	<h3 class="panel-title pull-left">
+              Hi {{username}}
+            </h3>
+
+    	   	<button class='btn btn-default pull-right' ng-click='edit()'>Edit </button>
+          <button class='btn btn-default pull-right' ng-click='save(username,password,dob,email)'>Save </button>  
+            <button class='btn btn-default pull-right' ng-click='cancel()'>Cancel</button>
+    	   	 
+    	   	
+            <div class="clearfix"></div> 
+    	   </div>
+      		  <div class="panel-body">
+                 <div class="row">
+  					<div class="col-md-7">
+  						<label for='username' class='control-label col-sm-2'>UserName:</label>
+  						
+  						<div class="col-md-7" >
+  							<div ng-hide="viewProfile">{{username}}</div>
+  						<div   ng-show="editProfile">	<input  type='text'  ng-model="username" disabled="true" /></div>
+  						</div>
+              </div>
+  					<div class="col-md-7">
+    					<label for='password' class='control-label col-sm-2'>Password:</label>
+    					<div class="col-md-7">
+                <div ng-hide="viewProfile">*******</div>
+                <div ng-show="editProfile"> <input  type='password'  ng-model='password' maxlength='7' /></div>
+               </div>
+   					</div>
+   					<div class="col-md-7">
+    					<label for='dob' class='control-label col-sm-2'>Date Of Birth:</label>
+    					<div class="col-md-7">
+                <div ng-hide="viewProfile"> {{dob}}</div>
+                <div   ng-show="editProfile"> <input  type='text'  ng-model="dob"  /></div>
+               </div>
+   					</div>	
+   					<div class="col-md-7">
+    					<label for='email' class='control-label col-sm-2'>Email:</label>
+    					<div class="col-md-7">
+                <div ng-hide="viewProfile"> {{email}}</div>
+                <div   ng-show="editProfile"> <input  type='text'  ng-model="email"  /></div>
+                </div>
+   					</div>		 
+  					</div> 
+    		  </div>
+    		</div>
+    	</div>
+    </form>
+    </div>

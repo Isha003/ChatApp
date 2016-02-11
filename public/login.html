@@ -1,0 +1,42 @@
+
+    	<div class="container">
+    		<div class='page-header'>
+                <h1>Login </h1>
+            </div>
+    		 <div class="row">
+    			<div class='col-sm-12'>
+                     <div >
+                        <h4>{{msg}}</h4>
+                        
+                    </div> 
+
+    				<div class='col-sm-6'>
+    					<form class='form-horizontal'  method='POST'>
+                           
+                            <div class='row form-group'>
+                                <label for='username' class='control-label col-sm-2'> Username: </label>
+                                <div class='col-sm-8'>
+                                    <input type='text' name='username' class='form-control' required ng-model='username'/>
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='password' class='control-label col-sm-2'> Password: </label>
+                                <div class='col-sm-8'>
+                                    <input type='password' name='password' class='form-control' required ng-model = 'passwd' />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <div class='col-sm-offset-2 col-sm-10'>
+                                    <button class='btn  btn-primary' ng-click='logIn(username,passwd)'> Log In </button>
+                                </div>
+                            </div>
+                        
+                        </form>
+                        <div class='col-sm-12'>
+                             <a href="/signup">New User Sign Up</a>
+                        </div>
+    				</div>
+    			</div>
+    	    </div>
+    	</div>
+  

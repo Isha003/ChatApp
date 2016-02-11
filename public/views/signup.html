@@ -1,0 +1,58 @@
+
+    	<div class="container">
+    		<div class='page-header'>
+                <h1>  SignUp Page</h1>
+            </div>
+    		<div class="row">
+    			<div class='col-sm-12'>
+                    <div class='col-sm-10'>
+                        <h3 >{{msg}}</h3>
+
+                    </div>
+
+    				<div class='col-sm-6'>
+    					<form class='form-horizontal'  method='POST'>
+                            
+                            <div class='row form-group'>
+                                <label for='username' class='control-label col-sm-4'> Username: </label>
+                                <div class='col-sm-8'>
+                                    <input type='text' name='username' class='form-control' ng-model='username' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='password' class='control-label col-sm-4'> Password: </label>
+                                <div class='col-sm-8'>
+                                    <input type='password' name='password' class='form-control' ng-model='passwd' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='confirmPassword' class='control-label col-sm-4'>Confirm Password: </label>
+                                <div class='error' style='margin-left:2px;'>{{error}}</div>
+                                <div class='col-sm-8'>
+                                    <input type='password' name='password' class='form-control' ng-model='confirmPasswd'required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='dob' class='control-label col-sm-4'> Date of Birth: </label>
+                                <div class='col-sm-8'>
+                                    <input type='text'  name='date' placeholder="mm-dd-yyyy" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class='form-control' ng-model='dob' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <label for='email' class='control-label col-sm-4'> Email: </label>
+                                <div class='col-sm-8'>
+                                    <input type='email' name='email' class='form-control' ng-model='email' required />
+                                </div>
+                            </div>
+                            <div class='row form-group'>
+                                <div class='col-sm-offset-2 col-sm-10'>
+                                    <button class='btn btn-primary' ng-click='register(username,passwd,confirmPasswd,dob,email)'> Register </button>
+                                </div>
+                            </div>
+                           
+                        </form>
+    				</div>
+    			</div>
+    	    </div>
+    	</div>
+    	

@@ -1,0 +1,19 @@
+.error{
+	color:yellow;
+	font-size:20px;
+}
+.panel-heading h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    width: 75%;
+    padding-top: 8px;
+}
+.chat{
+	font-family: cursive sans-serif;
+	color:black;
+	font-weight: bold;
+    overflow:scroll;
+
+}

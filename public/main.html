@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='chatApp'>
+    <head>
+        <title>Chat App !!</title>
+        <base href='/'>
+        <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='src/bootstrap.min.css' />
+        <link rel='stylesheet' href='styles/main.css' />
+    </head>
+    <body >
+    	<div class="page-header">
+            <h1>Welcome to Chat App</h1>
+    		
+           
+    	</div>
+        <div class='row'>
+                <div class='col-sm-10' ng-view></div>
+        </div>
+    	<script src='lib/jquery/dist/jquery.min.js'></script>
+        <script src='lib/bootstrap/dist/js/bootstrap.min.js'></script>
+        <script src='lib/angular/angular.min.js'></script>
+        <script src='lib/angular-route/angular-route.min.js'></script>
+        <script src='lib/angular-resource/angular-resource.min.js'></script>
+        <script src='lib/angular-messages/angular-messages.min.js'></script>
+        <script src='src/app.js'></script>
+        <script src='src/controller.js'></script>
+        <script src='src/service.js'></script>
+        <script  src = "../../socket.io/socket.io.js"></script>
+         
+        
+    </body>
+    </html>
